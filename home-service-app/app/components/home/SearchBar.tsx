@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         paddingHorizontal: 20,
         paddingVertical: 15,
-        backgroundColor: '#8B5CF6',
+        backgroundColor: Colors.primary,
         gap: 10,
     },
     searchContainer: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         borderRadius: 10,
     },
     searchInput: {
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     searchButton: {
         width: 50,
         height: 48,
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center',

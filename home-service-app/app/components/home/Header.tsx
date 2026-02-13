@@ -38,9 +38,9 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: '#8B5CF6',
-        paddingTop: 50,
-        paddingBottom: 1,
+        backgroundColor: Colors.primary,
+        paddingTop: 10,
+        paddingBottom: 5,
         paddingHorizontal: 20,
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         width: 50,
         height: 50,
         borderRadius: 25,
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 12,
@@ -67,20 +67,20 @@ const styles = StyleSheet.create({
     profileInitial: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#8B5CF6',
+        color: Colors.primary,
     },
     welcomeContainer: {
         justifyContent: 'center',
     },
     welcomeText: {
         fontSize: 14,
-        color: '#fff',
+        color: Colors.white,
         opacity: 0.9,
     },
     userName: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#fff',
+        color: Colors.white,
     },
     saveIcon: {
         width: 40,

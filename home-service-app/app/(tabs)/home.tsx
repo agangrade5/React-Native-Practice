@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import Header from '../components/home/Header';
 import SearchBar from '../components/home/SearchBar';
@@ -12,26 +13,32 @@ import Colors from '../utils/Colors';
 
 export default function Home() {
     return (
-        <ScrollView 
-            style={styles.container} 
-            showsVerticalScrollIndicator={false}
-        >
-            <Header />
-            <SearchBar />
-            <OffersSlider offers={offersData} />
-            <CategoriesList categories={categoriesData} />
-            <LatestBusinessList businesses={businessData} />
-            <View style={styles.bottomSpacing} />
-        </ScrollView>
+        <SafeAreaView style={styles.safe} edges={['top']}>
+            <ScrollView 
+                style={styles.container} 
+                showsVerticalScrollIndicator={false}
+                contentContainerStyle={styles.scrollContent}
+            >
+                <Header />
+                <SearchBar />
+                <OffersSlider offers={offersData} />
+                <CategoriesList categories={categoriesData} />
+                <LatestBusinessList businesses={businessData} />
+            </ScrollView>
+        </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
+    safe: {
+        flex: 1,
+        backgroundColor: Colors.primary, // Match header color
+    },
     container: {
         flex: 1,
         backgroundColor: Colors.white,
     },
-    bottomSpacing: {
-        height: 10,
+    scrollContent: {
+        paddingBottom: 3, // Space for bottom tab bar
     },
 });

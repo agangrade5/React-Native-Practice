@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     categoriesList: {
-        paddingHorizontal: 20,
+        paddingHorizontal: 15,
     },
     categoryCard: {
         alignItems: 'center',
