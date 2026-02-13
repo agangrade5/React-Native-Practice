@@ -4,9 +4,14 @@ import { useAuth } from "@clerk/clerk-expo";
 import { Redirect } from "expo-router";
 import Login from "./screens/auth/Login";
 import Colors from "./utils/Colors";
+import useCustomFonts from "./hook/useFonts";
 
 export default function Index() {
     const { isLoaded, isSignedIn } = useAuth();
+    
+    // Check if fonts are loaded
+    const fontsLoaded = useCustomFonts();
+    if (!fontsLoaded) return null;
 
     // Show loading while checking auth state
     if (!isLoaded) {

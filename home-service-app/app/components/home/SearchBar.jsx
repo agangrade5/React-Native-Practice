@@ -2,6 +2,7 @@ import React from 'react';
 import { View, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '../../utils/Colors';
+import Fonts from "../../utils/Fonts";
 
 export default function SearchBar() {
     return (
@@ -10,7 +11,7 @@ export default function SearchBar() {
                 <TextInput
                     style={styles.searchInput}
                     placeholder="Search"
-                    placeholderTextColor="#999"
+                    placeholderTextColor={Colors.gray60}
                 />
             </View>
             <TouchableOpacity style={styles.searchButton}>
@@ -38,6 +39,7 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         fontSize: 16,
         color: Colors.darkCharcoal,
+        fontFamily: Fonts.regular,
     },
     searchButton: {
         width: 50,

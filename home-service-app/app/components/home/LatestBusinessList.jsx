@@ -17,7 +17,7 @@ export default function LatestBusinessList({ businesses }) {
                         <Text style={styles.categoryBadgeText}>{item.category}</Text>
                     </View>
                     <View style={styles.rating}>
-                        <Ionicons name="star" size={14} color="#FFD700" />
+                        <Ionicons name="star" size={14} color={Colors.yellow} />
                         <Text style={styles.ratingText}>{item.rating}</Text>
                     </View>
                 </View>

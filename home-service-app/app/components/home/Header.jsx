@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { useUser } from '@clerk/clerk-expo';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '../../utils/Colors';
+import Fonts from "../../utils/Fonts";
 
 export default function Header() {
     const { user } = useUser();
@@ -13,7 +14,7 @@ export default function Header() {
                 <View style={styles.profileCircle}>
                     {user?.imageUrl ? (
                         <Image 
-                            source={{ uri: user.imageUrl }} 
+                            source={{ uri: user?.imageUrl }} 
                             style={styles.profileImage} 
                         />
                     ) : (
@@ -25,7 +26,7 @@ export default function Header() {
                 <View style={styles.welcomeContainer}>
                     <Text style={styles.welcomeText}>Welcome,</Text>
                     <Text style={styles.userName}>
-                        {user?.firstName || 'Game Play'}
+                        {user?.firstName || 'Guest'}
                     </Text>
                 </View>
             </View>
@@ -68,6 +69,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         color: Colors.primary,
+        fontFamily: Fonts.regular,
     },
     welcomeContainer: {
         justifyContent: 'center',
@@ -76,11 +78,13 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: Colors.white,
         opacity: 0.9,
+        fontFamily: Fonts.regular,
     },
     userName: {
         fontSize: 20,
         fontWeight: 'bold',
         color: Colors.white,
+        fontFamily: Fonts.medium,
     },
     saveIcon: {
         width: 40,
