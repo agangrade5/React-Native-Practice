@@ -47,12 +47,12 @@ const styles = StyleSheet.create({
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#333',
+        color: Colors.darkCharcoal,
         paddingLeft: 1,
     },
     viewAllText: {
         fontSize: 14,
-        color: '#8B5CF6',
+        color: Colors.primary,
         fontWeight: '600',
     },
     categoriesList: {
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     },
     categoryName: {
         fontSize: 12,
-        color: '#333',
+        color: Colors.darkCharcoal,
         textAlign: 'center',
         fontWeight: '500',
     },

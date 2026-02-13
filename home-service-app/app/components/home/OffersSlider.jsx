@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#333',
+        color: Colors.darkCharcoal,
         paddingLeft: 1,
     },
     offersList: {
@@ -72,18 +72,18 @@ const styles = StyleSheet.create({
     offerTitle: {
         fontSize: 22,
         fontWeight: 'bold',
-        color: '#fff',
+        color: Colors.white,
         marginBottom: 5,
     },
     offerSubtitle: {
         fontSize: 12,
-        color: '#fff',
+        color: Colors.white,
         opacity: 0.9,
         marginBottom: 5,
     },
     offerDescription: {
         fontSize: 11,
-        color: '#fff',
+        color: Colors.white,
         opacity: 0.8,
     },
     offerIconContainer: {

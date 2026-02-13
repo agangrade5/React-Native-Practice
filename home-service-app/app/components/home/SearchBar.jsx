@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 12,
         fontSize: 16,
-        color: '#333',
+        color: Colors.darkCharcoal,
     },
     searchButton: {
         width: 50,

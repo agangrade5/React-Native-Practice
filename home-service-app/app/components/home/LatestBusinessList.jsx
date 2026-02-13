@@ -59,12 +59,12 @@ const styles = StyleSheet.create({
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#333',
+        color: Colors.darkCharcoal,
         paddingLeft: 1,
     },
     viewAllText: {
         fontSize: 14,
-        color: '#8B5CF6',
+        color: Colors.primary,
         fontWeight: '600',
     },
     businessList: {
@@ -72,11 +72,11 @@ const styles = StyleSheet.create({
     },
     businessCard: {
         width: 160,
-        backgroundColor: '#fff',
+        backgroundColor: Colors.white,
         borderRadius: 15,
         overflow: 'hidden',
         marginRight: 15,
-        shadowColor: '#000',
+        shadowColor: Colors.black,
         shadowOffset: {
             width: 0,
             height: 2,
@@ -97,12 +97,12 @@ const styles = StyleSheet.create({
     businessTitle: {
         fontSize: 14,
         fontWeight: 'bold',
-        color: '#333',
+        color: Colors.darkCharcoal,
         marginBottom: 4,
     },
     businessName: {
         fontSize: 12,
-        color: '#666',
+        color: Colors.darkGray,
         marginBottom: 8,
     },
     businessFooter: {
@@ -111,14 +111,14 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     categoryBadge: {
-        backgroundColor: '#E8D5F2',
+        backgroundColor: Colors.secondary,
         paddingHorizontal: 10,
         paddingVertical: 4,
         borderRadius: 12,
     },
     categoryBadgeText: {
         fontSize: 10,
-        color: '#8B5CF6',
+        color: Colors.primary,
         fontWeight: '600',
     },
     rating: {
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     },
     ratingText: {
         fontSize: 12,
-        color: '#666',
+        color: Colors.darkGray,
         fontWeight: '600',
         marginLeft: 3,
     },

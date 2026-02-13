@@ -4,6 +4,7 @@ const Colors = {
     white: '#FFFFFF',
     whiteLight: 'rgba(255,255,255,0.3)',
     primary: '#8E3FFF',
+    secondary: '#E8D5F2',
     darkGray: '#666666',
     lightGray: '#eeeeee',
     pink: '#fee',
